@@ -1,0 +1,20 @@
+ALGORITHM distinct
+VAR
+   set1, set2 : ARRAY_OF INTEGER[15]; 
+   i, j : INTEGER := 0; 
+   sum : INTEGER := 0; 
+   found : BOOLEAN;
+BEGIN
+  FOR i FROM 0 TO set1.length-1 DO  
+     found := false;
+     FOR j FROM 0 TO set2.length-1 DO
+         IF (set1[i] = set2[j]) THEN
+            found = true
+            BREAK;
+         END_IF
+  
+  IF (NOT found) THEN
+      sum := sum + set[i]
+  END_IF
+  END_FOR
+END
